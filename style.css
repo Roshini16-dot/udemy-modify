@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ .Navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 10px;
+    align-items: center;
+    position:sticky;
+    top:0;
+    background-color:white;
+    
+ }
+
+ .Navbar__s1__Title{
+   font-size: 50px;
+   color: rgba(63, 5, 117, 0.808);
+ }
+
+ .Navbar__s2{
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+    
+ }
+ .Navbar__s2 input{
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    background-color: transparent;
+ }
+ .Navbar__s2 input:focus {
+    outline: none;
+ }
+ .Navbar__s3{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 25px;
+ }
+ .Navbar__s4{
+   display: none;
+ }
+ .categories{
+    display: flex;
+    padding: 10px;
+    border-bottom: solid black 1px;
+    justify-content: space-around;
+ }
+ .categories p{
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+
+ }
+ .sale-images{
+   position: relative;
+ }
+ .sale-images img{
+   width: 100%;
+ }
+ .sale-images__offer{
+   width:25%;
+   border: solid black;
+   background-color: white;
+   padding:2%;
+   position: absolute;
+   top:10%;
+   left: 10%;
+ }
+ .recommanded_container{
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+   flex-wrap: wrap;
+
+ }
+ .courses{
+   flex-grow: 1;
+   flex-basis: 20%;
+   margin: 5px;
+ }
+.courses img{
+   width: 100%;
+   height:70%
+}
+.topics__container{
+   display:flex;
+   margin:top;
+   gap:10px;
+   flex-wrap: wrap;
+}
+.topics{
+   padding:10px;
+}
+.topics__container p{
+   border:solid grey 2px;
+   padding:10px;
+   flex-grow: 1;
+   flex-basis: 25%;
+
+}
+
+.popular_container{
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+   flex-wrap: wrap;
+}
+.footer{
+   padding: 30px;
+   background-color: black;
+   color: white;
+}
+.footer__1{
+   display: flex;
+   gap: 10px ;
+}
+.footer__1 p{
+   margin: 20px;
+}
+
+@media screen and (max-width:800px)
+{
+   body{
+      font-size: 10px;
+   }
+}
+@media screen and (max-width:600px){
+   .courses{
+      flex-basis: 40%;
+}
+.categories{
+   display: none;
+}
+.Navbar__s2,.Navbar__s3{
+   display: none;
+}
+.Navbar__s4{
+   display: block;
+   font-size: 20px;
+}
+}
